@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public int health = 100;
     public GameObject deathEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         
+
     }
 
     public void TakeDamage(int damage)
