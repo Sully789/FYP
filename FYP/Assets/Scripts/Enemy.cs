@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 100;
-    public GameObject deathEffect;
+   // public GameObject deathEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
+        //Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

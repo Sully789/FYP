@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     float runSpeed = 40f;
     bool jump = false;
     bool crouch = false;
+    bool activeControl = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,21 +21,29 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerInput();
+        SwitchActiveControl();
+        Debug.Log(activeControl);
+
+    }
+
+    void PlayerInput()
+    {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        animator.SetFloat("Speed",Mathf.Abs(horizontalMove));
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if(Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-            animator.SetBool("IsJumping",true);
+            animator.SetBool("IsJumping", true);
         }
 
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
         }
-        else if(Input.GetButtonUp("Crouch"))
+        else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
         }
@@ -55,5 +64,17 @@ public class PlayerMovement : MonoBehaviour
         //Move character
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
+    }
+
+    void SwitchActiveControl()
+    {
+        if (Input.GetButtonDown("ActiveControl"))
+        {
+            activeControl = true;
+        }
+        else
+        {
+            activeControl = false;
+        }
     }
 }
