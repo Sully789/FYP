@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
@@ -9,7 +7,7 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        bullet.layer = 2;
     }
 
     // Update is called once per frame
@@ -21,7 +19,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    void Shoot()
+    public void Shoot()
     {
         Instantiate(bullet, firePoint.position, firePoint.rotation); 
     }

@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 635
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 344}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 114
+  controlID: 101
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 36
+  controlID: 59
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 113
+  controlID: 159
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 232
     height: 297
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -394,6 +394,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -424,6 +425,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -502,6 +504,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -532,6 +535,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -610,6 +614,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -640,6 +645,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -718,6 +724,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -748,6 +755,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -826,6 +834,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -856,6 +865,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -934,6 +944,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -964,6 +975,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1042,6 +1054,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1072,6 +1085,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1150,6 +1164,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1180,6 +1195,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1258,6 +1274,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1288,6 +1305,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1366,6 +1384,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1396,6 +1415,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1474,6 +1494,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1504,6 +1525,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1582,6 +1604,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1612,6 +1635,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1690,6 +1714,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1720,6 +1745,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1798,6 +1824,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1828,6 +1855,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1906,6 +1934,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1936,6 +1965,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2014,6 +2044,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2044,6 +2075,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2122,6 +2154,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2152,6 +2185,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2230,6 +2264,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2260,6 +2295,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2338,6 +2374,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2368,6 +2405,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2446,6 +2484,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2476,6 +2515,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2554,6 +2594,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2584,6 +2625,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2662,6 +2704,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2692,6 +2735,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2770,6 +2814,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2800,6 +2845,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2878,6 +2924,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2908,6 +2955,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2986,6 +3034,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3016,6 +3065,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -3094,6 +3144,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3124,6 +3175,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -3202,6 +3254,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3232,6 +3285,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -3310,6 +3364,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3340,6 +3395,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -3358,6 +3414,116 @@ MonoBehaviour:
     - Name: com.unity.ads
       DisplayName: Ads
       _Version: 3.4.1
+      Description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      Category: AssetStore/Unity
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.ads@2.0.8
+        m_IsRootDependency: 1
+        m_Version: 2.0.8
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.ads@2.0.8
+        m_AssetPath: Packages/com.unity.ads
+        m_Name: com.unity.ads
+        m_DisplayName: 
+        m_Category: AssetStore/Unity
+        m_Type: 
+        m_Description: Unity Ads is a video ad network for iOS and Android that allows
+          you to quickly and effectively monetize your games.
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.6
+          - 0.0.7
+          - 0.0.8
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 2.0.0
+          - 2.0.3
+          - 2.0.4
+          - 2.0.7
+          - 2.0.8
+          - 2.3.1
+          - 2.3.2
+          - 3.0.1
+          - 3.0.2
+          - 3.0.3
+          - 3.1.1
+          - 3.2.0
+          - 3.3.0
+          - 3.3.1
+          - 3.4.0
+          - 3.4.1
+          - 3.4.2
+          m_Compatible:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.6
+          - 0.0.7
+          - 0.0.8
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 2.0.0
+          - 2.0.3
+          - 2.0.4
+          - 2.0.7
+          - 2.0.8
+          - 2.3.1
+          - 2.3.2
+          - 3.0.1
+          - 3.0.2
+          - 3.0.3
+          - 3.1.1
+          - 3.2.0
+          - 3.3.0
+          - 3.3.1
+          - 3.4.0
+          - 3.4.1
+          - 3.4.2
+          m_Recommended: 2.0.8
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - ads
+        - unity
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.ads
+      DisplayName: Ads
+      _Version: 3.4.2
       Description: Unity Ads is a video ad network for iOS and Android that allows
         you to quickly and effectively monetize your games.
       Category: AssetStore/Unity
@@ -3418,6 +3584,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3448,6 +3615,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -3528,6 +3696,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -3561,8 +3730,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3646,6 +3816,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -3679,8 +3850,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3764,6 +3936,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -3797,8 +3970,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3882,6 +4056,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -3915,8 +4090,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4000,6 +4176,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4033,8 +4210,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4118,6 +4296,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4151,8 +4330,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4236,6 +4416,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4269,8 +4450,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4354,6 +4536,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4387,8 +4570,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4472,6 +4656,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4505,8 +4690,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4590,6 +4776,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4623,8 +4810,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4708,6 +4896,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4741,8 +4930,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4826,6 +5016,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4859,8 +5050,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4944,6 +5136,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -4977,8 +5170,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5062,6 +5256,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -5095,8 +5290,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5180,6 +5376,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -5213,8 +5410,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5298,6 +5496,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -5331,8 +5530,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5416,6 +5616,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -5449,8 +5650,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5534,6 +5736,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -5567,8 +5770,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5652,6 +5856,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -5685,8 +5890,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5770,6 +5976,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -5803,8 +6010,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5888,6 +6096,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -5921,8 +6130,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6006,6 +6216,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6039,8 +6250,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6124,6 +6336,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6157,8 +6370,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6242,6 +6456,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6275,8 +6490,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6360,6 +6576,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6393,8 +6610,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6478,6 +6696,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6511,8 +6730,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6596,6 +6816,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6629,8 +6850,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6714,6 +6936,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6747,8 +6970,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6832,6 +7056,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6865,8 +7090,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6950,6 +7176,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -6983,8 +7210,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -7006,6 +7234,126 @@ MonoBehaviour:
     - Name: com.unity.analytics
       DisplayName: Analytics Library
       _Version: 3.3.4
+      Description: The Unity Analytics Library contains the Analytics Event Tracker
+        component, the Data Privacy plug-in, and the Standard Events API.
+      Category: 
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.analytics@3.3.2
+        m_IsRootDependency: 1
+        m_Version: 3.3.2
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.analytics@3.3.2
+        m_AssetPath: Packages/com.unity.analytics
+        m_Name: com.unity.analytics
+        m_DisplayName: Analytics Library
+        m_Category: 
+        m_Type: 
+        m_Description: The Unity Analytics Library contains the Analytics Event Tracker
+          component, the Data Privacy plug-in, and the Standard Events API.
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.7
+          - 0.0.8
+          - 0.0.9
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 0.0.17
+          - 0.0.19
+          - 2.0.5
+          - 2.0.11
+          - 2.0.13
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 3.0.5
+          - 3.0.9
+          - 3.1.1
+          - 3.2.0
+          - 3.2.2
+          - 3.2.3
+          - 3.3.0
+          - 3.3.2-preview
+          - 3.3.2
+          - 3.3.4
+          - 3.3.5
+          - 3.4.0
+          m_Compatible:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.7
+          - 0.0.8
+          - 0.0.9
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 0.0.17
+          - 0.0.19
+          - 2.0.5
+          - 2.0.11
+          - 2.0.13
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 3.0.5
+          - 3.0.9
+          - 3.1.1
+          - 3.2.0
+          - 3.2.2
+          - 3.2.3
+          - 3.3.0
+          - 3.3.2-preview
+          - 3.3.2
+          - 3.3.4
+          - 3.3.5
+          - 3.4.0
+          m_Recommended: 3.3.5
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_Keywords:
+        - analytics
+        - unity
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.analytics
+      DisplayName: Analytics Library
+      _Version: 3.3.5
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
@@ -7068,6 +7416,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -7101,8 +7450,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -7186,6 +7536,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -7219,8 +7570,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -7297,6 +7649,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -7308,6 +7662,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -7401,6 +7757,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -7412,6 +7770,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -7505,6 +7865,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -7516,6 +7878,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -7609,6 +7973,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -7620,6 +7986,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -7713,6 +8081,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -7724,6 +8094,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -7817,6 +8189,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -7828,6 +8202,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -7921,6 +8297,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -7932,6 +8310,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -8025,6 +8405,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -8036,6 +8418,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -8129,6 +8513,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -8140,6 +8526,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -8178,6 +8566,222 @@ MonoBehaviour:
     - Name: com.unity.cinemachine
       DisplayName: Cinemachine
       _Version: 2.4.0-preview.10
+      Description: "Smart camera tools for passionate creators. \n\nIMPORTANT NOTE:
+        If you are upgrading from the Asset Store version of Cinemachine, delete the
+        Cinemachine asset from your project BEFORE installing this version from the
+        Package Manager."
+      Category: cinematography
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.cinemachine@2.3.4
+        m_IsRootDependency: 1
+        m_Version: 2.3.4
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_AssetPath: Packages/com.unity.cinemachine
+        m_Name: com.unity.cinemachine
+        m_DisplayName: Cinemachine
+        m_Category: cinematography
+        m_Type: 
+        m_Description: "Smart camera tools for passionate creators. \n\nIMPORTANT
+          NOTE: If you are upgrading from the Asset Store version of Cinemachine,
+          delete the Cinemachine asset from your project BEFORE installing this version
+          from the Package Manager."
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 2.1.11-beta.1
+          - 2.1.12
+          - 2.1.13
+          - 2.2.0
+          - 2.2.7
+          - 2.2.8
+          - 2.2.9
+          - 2.2.10-preview.3
+          - 2.2.10-preview.4
+          - 2.3.1
+          - 2.3.3
+          - 2.3.4
+          - 2.3.5-preview.3
+          - 2.4.0-preview.3
+          - 2.4.0-preview.4
+          - 2.4.0-preview.6
+          - 2.4.0-preview.7
+          - 2.4.0-preview.8
+          - 2.4.0-preview.9
+          - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
+          m_Compatible:
+          - 2.3.3
+          - 2.3.4
+          - 2.3.5-preview.3
+          - 2.4.0-preview.3
+          - 2.4.0-preview.4
+          - 2.4.0-preview.6
+          - 2.4.0-preview.7
+          - 2.4.0-preview.8
+          - 2.4.0-preview.9
+          - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - camera
+        - follow
+        - rig
+        - fps
+        - cinematography
+        - aim
+        - orbit
+        - cutscene
+        - cinematic
+        - collision
+        - freelook
+        - cinemachine
+        - compose
+        - composition
+        - dolly
+        - track
+        - clearshot
+        - noise
+        - framing
+        - handheld
+        - lens
+        - impulse
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.cinemachine
+      DisplayName: Cinemachine
+      _Version: 2.4.0
+      Description: "Smart camera tools for passionate creators. \n\nIMPORTANT NOTE:
+        If you are upgrading from the Asset Store version of Cinemachine, delete the
+        Cinemachine asset from your project BEFORE installing this version from the
+        Package Manager."
+      Category: cinematography
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.cinemachine@2.3.4
+        m_IsRootDependency: 1
+        m_Version: 2.3.4
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_AssetPath: Packages/com.unity.cinemachine
+        m_Name: com.unity.cinemachine
+        m_DisplayName: Cinemachine
+        m_Category: cinematography
+        m_Type: 
+        m_Description: "Smart camera tools for passionate creators. \n\nIMPORTANT
+          NOTE: If you are upgrading from the Asset Store version of Cinemachine,
+          delete the Cinemachine asset from your project BEFORE installing this version
+          from the Package Manager."
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 2.1.11-beta.1
+          - 2.1.12
+          - 2.1.13
+          - 2.2.0
+          - 2.2.7
+          - 2.2.8
+          - 2.2.9
+          - 2.2.10-preview.3
+          - 2.2.10-preview.4
+          - 2.3.1
+          - 2.3.3
+          - 2.3.4
+          - 2.3.5-preview.3
+          - 2.4.0-preview.3
+          - 2.4.0-preview.4
+          - 2.4.0-preview.6
+          - 2.4.0-preview.7
+          - 2.4.0-preview.8
+          - 2.4.0-preview.9
+          - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
+          m_Compatible:
+          - 2.3.3
+          - 2.3.4
+          - 2.3.5-preview.3
+          - 2.4.0-preview.3
+          - 2.4.0-preview.4
+          - 2.4.0-preview.6
+          - 2.4.0-preview.7
+          - 2.4.0-preview.8
+          - 2.4.0-preview.9
+          - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - camera
+        - follow
+        - rig
+        - fps
+        - cinematography
+        - aim
+        - orbit
+        - cutscene
+        - cinematic
+        - collision
+        - freelook
+        - cinemachine
+        - compose
+        - composition
+        - dolly
+        - track
+        - clearshot
+        - noise
+        - framing
+        - handheld
+        - lens
+        - impulse
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.cinemachine
+      DisplayName: Cinemachine
+      _Version: 2.5.0
       Description: "Smart camera tools for passionate creators. \n\nIMPORTANT NOTE:
         If you are upgrading from the Asset Store version of Cinemachine, delete the
         Cinemachine asset from your project BEFORE installing this version from the
@@ -8233,6 +8837,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -8244,6 +8850,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -8326,6 +8934,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -8402,6 +9011,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -8478,6 +9088,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -8554,6 +9165,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -8630,6 +9242,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -11659,13 +12272,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -11689,12 +12305,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -11822,13 +12440,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -11852,12 +12473,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -11985,13 +12608,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -12015,12 +12641,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -12148,13 +12776,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -12178,12 +12809,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -12311,13 +12944,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -12341,12 +12977,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -12474,13 +13112,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -12504,12 +13145,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -12637,13 +13280,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -12667,12 +13313,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -12800,13 +13448,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -12830,12 +13481,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -12963,13 +13616,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -12993,12 +13649,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -13126,13 +13784,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -13156,12 +13817,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -13289,13 +13952,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -13319,12 +13985,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -13452,13 +14120,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -13482,12 +14153,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -13615,13 +14288,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -13645,12 +14321,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -13778,13 +14456,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -13808,12 +14489,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -13941,13 +14624,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -13971,12 +14657,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -14104,13 +14792,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -14134,12 +14825,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -14267,13 +14960,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -14297,12 +14993,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -14430,13 +15128,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -14460,12 +15161,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -14593,13 +15296,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -14623,12 +15329,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -14756,13 +15464,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -14786,12 +15497,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -14919,13 +15632,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -14949,12 +15665,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -15082,13 +15800,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -15112,12 +15833,182 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          m_Recommended: 2.0.1
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_Keywords:
+        - TextMeshPro
+        - TextMesh Pro
+        - Text
+        - SDF
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.textmeshpro
+      DisplayName: TextMesh Pro
+      _Version: 1.5.0-preview.4
+      Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s the
+        perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+        Powerful and easy to use, TextMesh Pro uses Advanced Text Rendering techniques
+        along with a set of custom shaders; delivering substantial visual quality
+        improvements while giving users incredible flexibility when it comes to text
+        styling and texturing.
+
+
+        TextMesh Pro provides Improved Control over text formatting and layout with
+        features like character, word, line and paragraph spacing, kerning, justified
+        text, Links, over 30 Rich Text Tags available, support for Multi Font & Sprites,
+        Custom Styles and more.
+
+
+        Great performance. Since the geometry created by TextMesh Pro uses two triangles
+        per character just like Unity''s text components, this improved visual quality
+        and flexibility comes at no additional performance cost.
+
+
+
+        Special Notes:
+
+        ==========
+
+        This release requires .Net 4.x Scripting Runtime'
+      Category: Text Rendering
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.textmeshpro@2.0.1
+        m_IsRootDependency: 1
+        m_Version: 2.0.1
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.textmeshpro@2.0.1
+        m_AssetPath: Packages/com.unity.textmeshpro
+        m_Name: com.unity.textmeshpro
+        m_DisplayName: TextMesh Pro
+        m_Category: Text Rendering
+        m_Type: 
+        m_Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s
+          the perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+          Powerful and easy to use, TextMesh Pro uses Advanced Text Rendering techniques
+          along with a set of custom shaders; delivering substantial visual quality
+          improvements while giving users incredible flexibility when it comes to
+          text styling and texturing.
+
+
+          TextMesh Pro provides Improved Control over text formatting and layout with
+          features like character, word, line and paragraph spacing, kerning, justified
+          text, Links, over 30 Rich Text Tags available, support for Multi Font &
+          Sprites, Custom Styles and more.
+
+
+          Great performance. Since the geometry created by TextMesh Pro uses two triangles
+          per character just like Unity''s text components, this improved visual quality
+          and flexibility comes at no additional performance cost.
+
+
+
+          Special Notes:
+
+          ==========
+
+          This release requires .Net 4.x Scripting Runtime'
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          m_Compatible:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -15245,13 +16136,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -15275,12 +16169,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -15408,13 +16304,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -15438,12 +16337,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -15571,13 +16472,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -15601,12 +16505,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -15734,13 +16640,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -15764,12 +16673,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -15897,13 +16808,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -15927,12 +16841,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -15957,6 +16873,174 @@ MonoBehaviour:
     - Name: com.unity.textmeshpro
       DisplayName: TextMesh Pro
       _Version: 2.1.0-preview.3
+      Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s the
+        perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+        Powerful and easy to use, TextMesh Pro uses Advanced Text Rendering techniques
+        along with a set of custom shaders; delivering substantial visual quality
+        improvements while giving users incredible flexibility when it comes to text
+        styling and texturing.
+
+
+        TextMesh Pro provides Improved Control over text formatting and layout with
+        features like character, word, line and paragraph spacing, kerning, justified
+        text, Links, over 30 Rich Text Tags available, support for Multi Font & Sprites,
+        Custom Styles and more.
+
+
+        Great performance. Since the geometry created by TextMesh Pro uses two triangles
+        per character just like Unity''s text components, this improved visual quality
+        and flexibility comes at no additional performance cost.
+
+
+
+        Special Notes:
+
+        ==========
+
+        This release requires .Net 4.x Scripting Runtime'
+      Category: Text Rendering
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.textmeshpro@2.0.1
+        m_IsRootDependency: 1
+        m_Version: 2.0.1
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.textmeshpro@2.0.1
+        m_AssetPath: Packages/com.unity.textmeshpro
+        m_Name: com.unity.textmeshpro
+        m_DisplayName: TextMesh Pro
+        m_Category: Text Rendering
+        m_Type: 
+        m_Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s
+          the perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+          Powerful and easy to use, TextMesh Pro uses Advanced Text Rendering techniques
+          along with a set of custom shaders; delivering substantial visual quality
+          improvements while giving users incredible flexibility when it comes to
+          text styling and texturing.
+
+
+          TextMesh Pro provides Improved Control over text formatting and layout with
+          features like character, word, line and paragraph spacing, kerning, justified
+          text, Links, over 30 Rich Text Tags available, support for Multi Font &
+          Sprites, Custom Styles and more.
+
+
+          Great performance. Since the geometry created by TextMesh Pro uses two triangles
+          per character just like Unity''s text components, this improved visual quality
+          and flexibility comes at no additional performance cost.
+
+
+
+          Special Notes:
+
+          ==========
+
+          This release requires .Net 4.x Scripting Runtime'
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          m_Compatible:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          m_Recommended: 2.0.1
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_Keywords:
+        - TextMeshPro
+        - TextMesh Pro
+        - Text
+        - SDF
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.textmeshpro
+      DisplayName: TextMesh Pro
+      _Version: 2.1.0-preview.4
       Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s the
         perfect replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -16060,13 +17144,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -16090,12 +17177,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -17862,6 +18951,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -17892,6 +18982,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -17970,6 +19061,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18000,6 +19092,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18078,6 +19171,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18108,6 +19202,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18186,6 +19281,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18216,6 +19312,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18294,6 +19391,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18324,6 +19422,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18402,6 +19501,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18432,6 +19532,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18510,6 +19611,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18540,6 +19642,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18618,6 +19721,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18648,6 +19752,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18726,6 +19831,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18756,6 +19862,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18834,6 +19941,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18864,6 +19972,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -18942,6 +20051,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -18972,6 +20082,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19050,6 +20161,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19080,6 +20192,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19158,6 +20271,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19188,6 +20302,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19266,6 +20381,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19296,6 +20412,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19374,6 +20491,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19404,6 +20522,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19482,6 +20601,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19512,6 +20632,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19590,6 +20711,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19620,6 +20742,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19698,6 +20821,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19728,6 +20852,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19806,6 +20931,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19836,6 +20962,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -19914,6 +21041,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -19944,6 +21072,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20022,6 +21151,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20052,6 +21182,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20130,6 +21261,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20160,6 +21292,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20238,6 +21371,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20268,6 +21402,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20346,6 +21481,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20376,6 +21512,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20454,6 +21591,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20484,6 +21622,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20562,6 +21701,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20592,6 +21732,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20670,6 +21811,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20700,6 +21842,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20778,6 +21921,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20808,6 +21952,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20826,6 +21971,116 @@ MonoBehaviour:
     - Name: com.unity.ads
       DisplayName: Ads
       _Version: 3.4.1
+      Description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      Category: AssetStore/Unity
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.ads@2.0.8
+        m_IsRootDependency: 1
+        m_Version: 2.0.8
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.ads@2.0.8
+        m_AssetPath: Packages/com.unity.ads
+        m_Name: com.unity.ads
+        m_DisplayName: 
+        m_Category: AssetStore/Unity
+        m_Type: 
+        m_Description: Unity Ads is a video ad network for iOS and Android that allows
+          you to quickly and effectively monetize your games.
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.6
+          - 0.0.7
+          - 0.0.8
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 2.0.0
+          - 2.0.3
+          - 2.0.4
+          - 2.0.7
+          - 2.0.8
+          - 2.3.1
+          - 2.3.2
+          - 3.0.1
+          - 3.0.2
+          - 3.0.3
+          - 3.1.1
+          - 3.2.0
+          - 3.3.0
+          - 3.3.1
+          - 3.4.0
+          - 3.4.1
+          - 3.4.2
+          m_Compatible:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.6
+          - 0.0.7
+          - 0.0.8
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 2.0.0
+          - 2.0.3
+          - 2.0.4
+          - 2.0.7
+          - 2.0.8
+          - 2.3.1
+          - 2.3.2
+          - 3.0.1
+          - 3.0.2
+          - 3.0.3
+          - 3.1.1
+          - 3.2.0
+          - 3.3.0
+          - 3.3.1
+          - 3.4.0
+          - 3.4.1
+          - 3.4.2
+          m_Recommended: 2.0.8
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - ads
+        - unity
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.ads
+      DisplayName: Ads
+      _Version: 3.4.2
       Description: Unity Ads is a video ad network for iOS and Android that allows
         you to quickly and effectively monetize your games.
       Category: AssetStore/Unity
@@ -20886,6 +22141,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -20916,6 +22172,7 @@ MonoBehaviour:
           - 3.3.1
           - 3.4.0
           - 3.4.1
+          - 3.4.2
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -20996,6 +22253,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21029,8 +22287,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -21114,6 +22373,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21147,8 +22407,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -21232,6 +22493,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21265,8 +22527,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -21350,6 +22613,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21383,8 +22647,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -21468,6 +22733,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21501,8 +22767,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -21586,6 +22853,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21619,8 +22887,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -21704,6 +22973,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21737,8 +23007,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -21822,6 +23093,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21855,8 +23127,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -21940,6 +23213,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -21973,8 +23247,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -22058,6 +23333,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -22091,8 +23367,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -22176,6 +23453,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -22209,8 +23487,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -22294,6 +23573,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -22327,8 +23607,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -22412,6 +23693,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -22445,8 +23727,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -22530,6 +23813,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -22563,8 +23847,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -22648,6 +23933,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -22681,8 +23967,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -22766,6 +24053,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -22799,8 +24087,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -22884,6 +24173,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -22917,8 +24207,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23002,6 +24293,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23035,8 +24327,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23120,6 +24413,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23153,8 +24447,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23238,6 +24533,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23271,8 +24567,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23356,6 +24653,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23389,8 +24687,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23474,6 +24773,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23507,8 +24807,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23592,6 +24893,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23625,8 +24927,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23710,6 +25013,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23743,8 +25047,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23828,6 +25133,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23861,8 +25167,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -23946,6 +25253,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -23979,8 +25287,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -24064,6 +25373,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -24097,8 +25407,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -24182,6 +25493,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -24215,8 +25527,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -24300,6 +25613,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -24333,8 +25647,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -24418,6 +25733,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -24451,8 +25767,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -24474,6 +25791,126 @@ MonoBehaviour:
     - Name: com.unity.analytics
       DisplayName: Analytics Library
       _Version: 3.3.4
+      Description: The Unity Analytics Library contains the Analytics Event Tracker
+        component, the Data Privacy plug-in, and the Standard Events API.
+      Category: 
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.analytics@3.3.2
+        m_IsRootDependency: 1
+        m_Version: 3.3.2
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.analytics@3.3.2
+        m_AssetPath: Packages/com.unity.analytics
+        m_Name: com.unity.analytics
+        m_DisplayName: Analytics Library
+        m_Category: 
+        m_Type: 
+        m_Description: The Unity Analytics Library contains the Analytics Event Tracker
+          component, the Data Privacy plug-in, and the Standard Events API.
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.7
+          - 0.0.8
+          - 0.0.9
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 0.0.17
+          - 0.0.19
+          - 2.0.5
+          - 2.0.11
+          - 2.0.13
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 3.0.5
+          - 3.0.9
+          - 3.1.1
+          - 3.2.0
+          - 3.2.2
+          - 3.2.3
+          - 3.3.0
+          - 3.3.2-preview
+          - 3.3.2
+          - 3.3.4
+          - 3.3.5
+          - 3.4.0
+          m_Compatible:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.7
+          - 0.0.8
+          - 0.0.9
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 0.0.17
+          - 0.0.19
+          - 2.0.5
+          - 2.0.11
+          - 2.0.13
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 3.0.5
+          - 3.0.9
+          - 3.1.1
+          - 3.2.0
+          - 3.2.2
+          - 3.2.3
+          - 3.3.0
+          - 3.3.2-preview
+          - 3.3.2
+          - 3.3.4
+          - 3.3.5
+          - 3.4.0
+          m_Recommended: 3.3.5
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_Keywords:
+        - analytics
+        - unity
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.analytics
+      DisplayName: Analytics Library
+      _Version: 3.3.5
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
@@ -24536,6 +25973,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -24569,8 +26007,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -24654,6 +26093,7 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
           m_Compatible:
           - 0.0.3
@@ -24687,8 +26127,9 @@ MonoBehaviour:
           - 3.3.2-preview
           - 3.3.2
           - 3.3.4
+          - 3.3.5
           - 3.4.0
-          m_Recommended: 3.3.4
+          m_Recommended: 3.3.5
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -24765,6 +26206,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -24776,6 +26219,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -24869,6 +26314,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -24880,6 +26327,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -24973,6 +26422,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -24984,6 +26435,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -25077,6 +26530,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -25088,6 +26543,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -25181,6 +26638,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -25192,6 +26651,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -25285,6 +26746,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -25296,6 +26759,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -25389,6 +26854,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -25400,6 +26867,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -25493,6 +26962,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -25504,6 +26975,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -25597,6 +27070,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -25608,6 +27083,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -25646,6 +27123,222 @@ MonoBehaviour:
     - Name: com.unity.cinemachine
       DisplayName: Cinemachine
       _Version: 2.4.0-preview.10
+      Description: "Smart camera tools for passionate creators. \n\nIMPORTANT NOTE:
+        If you are upgrading from the Asset Store version of Cinemachine, delete the
+        Cinemachine asset from your project BEFORE installing this version from the
+        Package Manager."
+      Category: cinematography
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.cinemachine@2.3.4
+        m_IsRootDependency: 1
+        m_Version: 2.3.4
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_AssetPath: Packages/com.unity.cinemachine
+        m_Name: com.unity.cinemachine
+        m_DisplayName: Cinemachine
+        m_Category: cinematography
+        m_Type: 
+        m_Description: "Smart camera tools for passionate creators. \n\nIMPORTANT
+          NOTE: If you are upgrading from the Asset Store version of Cinemachine,
+          delete the Cinemachine asset from your project BEFORE installing this version
+          from the Package Manager."
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 2.1.11-beta.1
+          - 2.1.12
+          - 2.1.13
+          - 2.2.0
+          - 2.2.7
+          - 2.2.8
+          - 2.2.9
+          - 2.2.10-preview.3
+          - 2.2.10-preview.4
+          - 2.3.1
+          - 2.3.3
+          - 2.3.4
+          - 2.3.5-preview.3
+          - 2.4.0-preview.3
+          - 2.4.0-preview.4
+          - 2.4.0-preview.6
+          - 2.4.0-preview.7
+          - 2.4.0-preview.8
+          - 2.4.0-preview.9
+          - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
+          m_Compatible:
+          - 2.3.3
+          - 2.3.4
+          - 2.3.5-preview.3
+          - 2.4.0-preview.3
+          - 2.4.0-preview.4
+          - 2.4.0-preview.6
+          - 2.4.0-preview.7
+          - 2.4.0-preview.8
+          - 2.4.0-preview.9
+          - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - camera
+        - follow
+        - rig
+        - fps
+        - cinematography
+        - aim
+        - orbit
+        - cutscene
+        - cinematic
+        - collision
+        - freelook
+        - cinemachine
+        - compose
+        - composition
+        - dolly
+        - track
+        - clearshot
+        - noise
+        - framing
+        - handheld
+        - lens
+        - impulse
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.cinemachine
+      DisplayName: Cinemachine
+      _Version: 2.4.0
+      Description: "Smart camera tools for passionate creators. \n\nIMPORTANT NOTE:
+        If you are upgrading from the Asset Store version of Cinemachine, delete the
+        Cinemachine asset from your project BEFORE installing this version from the
+        Package Manager."
+      Category: cinematography
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.cinemachine@2.3.4
+        m_IsRootDependency: 1
+        m_Version: 2.3.4
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_AssetPath: Packages/com.unity.cinemachine
+        m_Name: com.unity.cinemachine
+        m_DisplayName: Cinemachine
+        m_Category: cinematography
+        m_Type: 
+        m_Description: "Smart camera tools for passionate creators. \n\nIMPORTANT
+          NOTE: If you are upgrading from the Asset Store version of Cinemachine,
+          delete the Cinemachine asset from your project BEFORE installing this version
+          from the Package Manager."
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 2.1.11-beta.1
+          - 2.1.12
+          - 2.1.13
+          - 2.2.0
+          - 2.2.7
+          - 2.2.8
+          - 2.2.9
+          - 2.2.10-preview.3
+          - 2.2.10-preview.4
+          - 2.3.1
+          - 2.3.3
+          - 2.3.4
+          - 2.3.5-preview.3
+          - 2.4.0-preview.3
+          - 2.4.0-preview.4
+          - 2.4.0-preview.6
+          - 2.4.0-preview.7
+          - 2.4.0-preview.8
+          - 2.4.0-preview.9
+          - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
+          m_Compatible:
+          - 2.3.3
+          - 2.3.4
+          - 2.3.5-preview.3
+          - 2.4.0-preview.3
+          - 2.4.0-preview.4
+          - 2.4.0-preview.6
+          - 2.4.0-preview.7
+          - 2.4.0-preview.8
+          - 2.4.0-preview.9
+          - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - camera
+        - follow
+        - rig
+        - fps
+        - cinematography
+        - aim
+        - orbit
+        - cutscene
+        - cinematic
+        - collision
+        - freelook
+        - cinemachine
+        - compose
+        - composition
+        - dolly
+        - track
+        - clearshot
+        - noise
+        - framing
+        - handheld
+        - lens
+        - impulse
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.cinemachine
+      DisplayName: Cinemachine
+      _Version: 2.5.0
       Description: "Smart camera tools for passionate creators. \n\nIMPORTANT NOTE:
         If you are upgrading from the Asset Store version of Cinemachine, delete the
         Cinemachine asset from your project BEFORE installing this version from the
@@ -25701,6 +27394,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Compatible:
           - 2.3.3
           - 2.3.4
@@ -25712,6 +27407,8 @@ MonoBehaviour:
           - 2.4.0-preview.8
           - 2.4.0-preview.9
           - 2.4.0-preview.10
+          - 2.4.0
+          - 2.5.0
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -25794,6 +27491,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -25870,6 +27568,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -25946,6 +27645,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -26022,6 +27722,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -26098,6 +27799,7 @@ MonoBehaviour:
           - 1.3.3
           - 1.3.4
           - 1.3.5
+          - 1.3.6
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -29127,13 +30829,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -29157,12 +30862,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -29290,13 +30997,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -29320,12 +31030,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -29453,13 +31165,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -29483,12 +31198,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -29616,13 +31333,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -29646,12 +31366,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -29779,13 +31501,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -29809,12 +31534,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -29942,13 +31669,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -29972,12 +31702,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -30105,13 +31837,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -30135,12 +31870,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -30268,13 +32005,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -30298,12 +32038,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -30431,13 +32173,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -30461,12 +32206,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -30594,13 +32341,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -30624,12 +32374,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -30757,13 +32509,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -30787,12 +32542,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -30920,13 +32677,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -30950,12 +32710,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -31083,13 +32845,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -31113,12 +32878,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -31246,13 +33013,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -31276,12 +33046,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -31409,13 +33181,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -31439,12 +33214,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -31572,13 +33349,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -31602,12 +33382,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -31735,13 +33517,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -31765,12 +33550,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -31898,13 +33685,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -31928,12 +33718,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -32061,13 +33853,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -32091,12 +33886,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -32224,13 +34021,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -32254,12 +34054,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -32387,13 +34189,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -32417,12 +34222,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -32550,13 +34357,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -32580,12 +34390,182 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          m_Recommended: 2.0.1
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_Keywords:
+        - TextMeshPro
+        - TextMesh Pro
+        - Text
+        - SDF
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.textmeshpro
+      DisplayName: TextMesh Pro
+      _Version: 1.5.0-preview.4
+      Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s the
+        perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+        Powerful and easy to use, TextMesh Pro uses Advanced Text Rendering techniques
+        along with a set of custom shaders; delivering substantial visual quality
+        improvements while giving users incredible flexibility when it comes to text
+        styling and texturing.
+
+
+        TextMesh Pro provides Improved Control over text formatting and layout with
+        features like character, word, line and paragraph spacing, kerning, justified
+        text, Links, over 30 Rich Text Tags available, support for Multi Font & Sprites,
+        Custom Styles and more.
+
+
+        Great performance. Since the geometry created by TextMesh Pro uses two triangles
+        per character just like Unity''s text components, this improved visual quality
+        and flexibility comes at no additional performance cost.
+
+
+
+        Special Notes:
+
+        ==========
+
+        This release requires .Net 4.x Scripting Runtime'
+      Category: Text Rendering
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.textmeshpro@2.0.1
+        m_IsRootDependency: 1
+        m_Version: 2.0.1
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.textmeshpro@2.0.1
+        m_AssetPath: Packages/com.unity.textmeshpro
+        m_Name: com.unity.textmeshpro
+        m_DisplayName: TextMesh Pro
+        m_Category: Text Rendering
+        m_Type: 
+        m_Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s
+          the perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+          Powerful and easy to use, TextMesh Pro uses Advanced Text Rendering techniques
+          along with a set of custom shaders; delivering substantial visual quality
+          improvements while giving users incredible flexibility when it comes to
+          text styling and texturing.
+
+
+          TextMesh Pro provides Improved Control over text formatting and layout with
+          features like character, word, line and paragraph spacing, kerning, justified
+          text, Links, over 30 Rich Text Tags available, support for Multi Font &
+          Sprites, Custom Styles and more.
+
+
+          Great performance. Since the geometry created by TextMesh Pro uses two triangles
+          per character just like Unity''s text components, this improved visual quality
+          and flexibility comes at no additional performance cost.
+
+
+
+          Special Notes:
+
+          ==========
+
+          This release requires .Net 4.x Scripting Runtime'
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          m_Compatible:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -32713,13 +34693,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -32743,12 +34726,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -32876,13 +34861,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -32906,12 +34894,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -33039,13 +35029,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -33069,12 +35062,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -33202,13 +35197,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -33232,12 +35230,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -33365,13 +35365,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -33395,12 +35398,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -33425,6 +35430,174 @@ MonoBehaviour:
     - Name: com.unity.textmeshpro
       DisplayName: TextMesh Pro
       _Version: 2.1.0-preview.3
+      Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s the
+        perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+        Powerful and easy to use, TextMesh Pro uses Advanced Text Rendering techniques
+        along with a set of custom shaders; delivering substantial visual quality
+        improvements while giving users incredible flexibility when it comes to text
+        styling and texturing.
+
+
+        TextMesh Pro provides Improved Control over text formatting and layout with
+        features like character, word, line and paragraph spacing, kerning, justified
+        text, Links, over 30 Rich Text Tags available, support for Multi Font & Sprites,
+        Custom Styles and more.
+
+
+        Great performance. Since the geometry created by TextMesh Pro uses two triangles
+        per character just like Unity''s text components, this improved visual quality
+        and flexibility comes at no additional performance cost.
+
+
+
+        Special Notes:
+
+        ==========
+
+        This release requires .Net 4.x Scripting Runtime'
+      Category: Text Rendering
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.textmeshpro@2.0.1
+        m_IsRootDependency: 1
+        m_Version: 2.0.1
+        m_Source: 1
+        m_ResolvedPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP\Library\PackageCache\com.unity.textmeshpro@2.0.1
+        m_AssetPath: Packages/com.unity.textmeshpro
+        m_Name: com.unity.textmeshpro
+        m_DisplayName: TextMesh Pro
+        m_Category: Text Rendering
+        m_Type: 
+        m_Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s
+          the perfect replacement for Unity''s UI Text and the legacy Text Mesh.
+
+
+          Powerful and easy to use, TextMesh Pro uses Advanced Text Rendering techniques
+          along with a set of custom shaders; delivering substantial visual quality
+          improvements while giving users incredible flexibility when it comes to
+          text styling and texturing.
+
+
+          TextMesh Pro provides Improved Control over text formatting and layout with
+          features like character, word, line and paragraph spacing, kerning, justified
+          text, Links, over 30 Rich Text Tags available, support for Multi Font &
+          Sprites, Custom Styles and more.
+
+
+          Great performance. Since the geometry created by TextMesh Pro uses two triangles
+          per character just like Unity''s text components, this improved visual quality
+          and flexibility comes at no additional performance cost.
+
+
+
+          Special Notes:
+
+          ==========
+
+          This release requires .Net 4.x Scripting Runtime'
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          - 3.0.0-preview.3
+          - 3.0.0-preview.4
+          m_Compatible:
+          - 0.1.2
+          - 1.0.21
+          - 1.0.23
+          - 1.0.25
+          - 1.0.26
+          - 1.1.0
+          - 1.2.0
+          - 1.2.1
+          - 1.2.2
+          - 1.2.3
+          - 1.2.4
+          - 1.3.0-preview
+          - 1.3.0
+          - 1.4.0-preview.1b
+          - 1.4.0-preview.2a
+          - 1.4.0-preview.3a
+          - 1.4.0
+          - 1.4.1-preview.1
+          - 1.4.1
+          - 1.5.0-preview.1
+          - 1.5.0-preview.2
+          - 1.5.0-preview.3
+          - 1.5.0-preview.4
+          - 2.0.0
+          - 2.0.1-preview.1
+          - 2.0.1
+          - 2.1.0-preview.1
+          - 2.1.0-preview.2
+          - 2.1.0-preview.3
+          - 2.1.0-preview.4
+          m_Recommended: 2.0.1
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_Keywords:
+        - TextMeshPro
+        - TextMesh Pro
+        - Text
+        - SDF
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.textmeshpro
+      DisplayName: TextMesh Pro
+      _Version: 2.1.0-preview.4
       Description: 'TextMesh Pro is the ultimate text solution for Unity. It''s the
         perfect replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -33528,13 +35701,16 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           - 3.0.0-preview.3
+          - 3.0.0-preview.4
           m_Compatible:
           - 0.1.2
           - 1.0.21
@@ -33558,12 +35734,14 @@ MonoBehaviour:
           - 1.5.0-preview.1
           - 1.5.0-preview.2
           - 1.5.0-preview.3
+          - 1.5.0-preview.4
           - 2.0.0
           - 2.0.1-preview.1
           - 2.0.1
           - 2.1.0-preview.1
           - 2.1.0-preview.2
           - 2.1.0-preview.3
+          - 2.1.0-preview.4
           m_Recommended: 2.0.1
         m_Dependencies:
         - m_Name: com.unity.ugui
@@ -126910,8 +129088,8 @@ MonoBehaviour:
           m_Name: 
           m_Url: https://packages.unity.com
           m_IsDefault: 1
-    listPackagesVersion: 35
-    listPackagesOfflineVersion: 34
+    listPackagesVersion: 36
+    listPackagesOfflineVersion: 35
     searchOperationOngoing: 1
     listOperationOngoing: 0
     listOperationOfflineOngoing: 0
@@ -127260,9 +129438,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 96420000
-      m_LastClickedID: 17046
-      m_ExpandedIDs: 8efbffff4c4200007442000096420000
+      m_SelectedIDs: 22250000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -127322,7 +129500,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.175254, y: 0.5802236, z: -9.136719}
+    m_Target: {x: 10.221339, y: -1.8783505, z: -4.625}
     speed: 2
     m_Value: {x: 4.175254, y: 0.5802236, z: -9.136719}
   m_RenderMode: 0
@@ -127357,9 +129535,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 18.01704
+    m_Target: 33.926582
     speed: 2
-    m_Value: 17.241186
+    m_Value: 18.01704
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -127540,9 +129718,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f43e0000
-    m_LastClickedID: 16116
-    m_ExpandedIDs: 00000000242c00002a2c0000642d0000a23500007e38000052390000d4390000883a00001c3c0000623f0000fe40000000ca9a3b
+    m_SelectedIDs: f63e0000
+    m_LastClickedID: 16118
+    m_ExpandedIDs: 00000000262c00002c2c0000662d0000a43500008038000054390000d63900008a3a00001e3c0000643f00000041000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -127570,7 +129748,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000242c00002a2c0000642d0000a23500007e38000052390000d4390000883a00001c3c0000623f000014400000fe400000
+    m_ExpandedIDs: 00000000262c00002c2c0000662d0000a43500008038000054390000d63900008a3a00001e3c0000643f000000410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
