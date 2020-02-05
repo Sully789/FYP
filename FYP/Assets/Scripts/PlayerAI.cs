@@ -16,7 +16,7 @@ public class PlayerAI : MonoBehaviour
    // public float liftForce;       // Force to apply when lifting the rigidbody.
    // public float damping;         // Force reduction proportional to speed (reduces bouncing).
 
-    float horizontalMove = 0f;
+    float horizontalMove = 1.0f;
     float runSpeed = 40f;
     bool jump = false;
     bool crouch = false;
@@ -50,12 +50,13 @@ public class PlayerAI : MonoBehaviour
     // FixedUpdate is called a fixed number of times per second
     void FixedUpdate()
     {
-        // Pathfind();
+         Pathfind();
         // Movement();
-        while (reachedEndOfPath != true)
-        {
-            InvokeRepeating("Movement", 0f, .5f);
-        }
+      //  if (reachedEndOfPath == false)
+      //  {
+        //    Movement();
+            //InvokeRepeating("Movement", 0f, .5f);
+       // }
            
         Raycast();
     }
@@ -91,12 +92,14 @@ public class PlayerAI : MonoBehaviour
 
         if (force.x >= 0.01f)
         {
-            player.localScale = new Vector3(-1f, 1f, 1f);
+           // player.localScale = new Vector3(-1f, 1f, 1f);
+            controller.Move((horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
             // animator.SetFloat("Speed", Mathf.Abs(force.x));
         }
         else if (force.x <= 0.01f)
         {
-            player.localScale = new Vector3(1f, 1f, 1f);
+           // player.localScale = new Vector3(1f, 1f, 1f);
+            controller.Move(-(horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
             //animator.SetFloat("Speed", Mathf.Abs(force.x));
         }
     }
