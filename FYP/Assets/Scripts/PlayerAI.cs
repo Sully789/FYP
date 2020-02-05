@@ -50,8 +50,13 @@ public class PlayerAI : MonoBehaviour
     // FixedUpdate is called a fixed number of times per second
     void FixedUpdate()
     {
-       // Pathfind();
-        Movement();
+        // Pathfind();
+        // Movement();
+        while (reachedEndOfPath != true)
+        {
+            InvokeRepeating("Movement", 0f, .5f);
+        }
+           
         Raycast();
     }
 
