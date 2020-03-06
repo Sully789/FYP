@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\PlayerAI.cs" />
+    <Compile Include="Assets\Scripts\PlayerAI_MCTS.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
