@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     private bool isShooting = false;
     private bool isAtGoal = false;
 
+   
     public bool IsMoving
     {
         get { return isMoving; }
@@ -35,7 +37,6 @@ public class Player : MonoBehaviour
     public bool Moving()
     {
         isMoving = true;
-        //code to move
         Debug.Log("Moving");
         return isMoving;
     }
@@ -43,7 +44,6 @@ public class Player : MonoBehaviour
     public bool Jumping()
     {
         isJumping = true;
-        //code to jump
         Debug.Log("Jump");
         return isJumping;
     }

@@ -2309,7 +2309,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264873918}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd9a15423de3f2d46b695e03941ee4bf, type: 3}
   m_Name: 
@@ -2355,7 +2355,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264873918}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92a429c40dafe4141a0bf155d4e7e7c5, type: 3}
   m_Name: 
@@ -2385,6 +2385,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70b06e9a15d1714297f6a5cbab8ad66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_evaluating: {r: 0, g: 0, b: 0, a: 0}
+  m_succeeded: {r: 0, g: 0, b: 0, a: 0}
+  m_failed: {r: 0, g: 0, b: 0, a: 0}
+  m_rootNodeBox: {fileID: 0}
+  m_node2aBox: {fileID: 0}
+  m_node2bBox: {fileID: 0}
+  m_node2cBox: {fileID: 0}
+  m_node3Box: {fileID: 0}
+  enemy: {fileID: 0}
+  goal: {fileID: 1225054378}
+  m_targetValue: 20
+  target: {fileID: 1225054381}
+  controller: {fileID: 1264873925}
+  animator: {fileID: 1264873919}
+  speed: 200
+  nextWaypointDistance: 3
+  player: {fileID: 1264873921}
 --- !u!1 &1291626731
 GameObject:
   m_ObjectHideFlags: 0
