@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -77,7 +77,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 344}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 107
+  controlID: 130
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 65
+  controlID: 40
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 106
+  controlID: 39
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,8 +266,8 @@ MonoBehaviour:
     y: 0
     width: 502
     height: 297
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -129338,8 +129338,8 @@ MonoBehaviour:
     height: 344
   m_ViewDataDictionary: {fileID: 0}
   m_ResetOnNextRepaint: 0
-  m_SelectedAssetPath: Assets/BayatGames/Free Platform Game Assets/Character Animation/Idle/Blink/2x.png
-  m_SelectedSpriteRectGUID: d610269b136ce964691fbd4710d51dc2
+  m_SelectedAssetPath: Assets/BayatGames/Free Platform Game Assets/Coin Animation/png/2x/Coin.png
+  m_SelectedSpriteRectGUID: da14a60671138564faa2061f67206327
   m_LastUsedModuleTypeName: 
 --- !u!114 &16
 MonoBehaviour:
@@ -129362,14 +129362,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 370
+    x: 502
     y: 436
-    width: 717
+    width: 585
     height: 253
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 17118
+  m_LastSelectedObjectID: 17094
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129480,9 +129480,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: de420000
-      m_LastClickedID: 17118
-      m_ExpandedIDs: 70dbffff8efbffff98420000b0420000
+      m_SelectedIDs: c6420000
+      m_LastClickedID: 17094
+      m_ExpandedIDs: 8efbffff72420000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -129542,9 +129542,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.2971554, y: 1.0527545, z: -0.91796875}
+    m_Target: {x: 87.30416, y: -0.57495385, z: -4.1360354}
     speed: 2
-    m_Value: {x: -2.2971554, y: 1.0527545, z: -0.91796875}
+    m_Value: {x: 87.30416, y: -0.57495385, z: -4.1360354}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -129577,9 +129577,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.201655
+    m_Target: 27.233816
     speed: 2
-    m_Value: 12.201655
+    m_Value: 27.233816
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -129625,9 +129625,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 501
+    x: 502
     y: 73
-    width: 342
+    width: 585
     height: 344
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
@@ -129668,10 +129668,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 3356edf965925a845ac595665469e9be,
+  m_AnimatorController: {fileID: 9100000, guid: 8063e63cae3147f45b1b6ddf41d0be84,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -1586053468493539042, guid: 3356edf965925a845ac595665469e9be,
+  - m_Target: {fileID: 5771712261617818507, guid: 8063e63cae3147f45b1b6ddf41d0be84,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -129749,20 +129749,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Sean\Documents\GitHub\2019-year-4-projects-Sully789\FYP
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 023d0000
-    m_LastClickedID: 15618
-    m_ExpandedIDs: 000000003a2c0000402c00007a2d0000b83500009438000068390000ea3900009e3a0000323c00000a3f0000783f00001441000000ca9a3b
+    m_SelectedIDs: 103f0000
+    m_LastClickedID: 16144
+    m_ExpandedIDs: 000000003e2c0000442c00007e2d0000bc350000983800006c390000ee390000a43a0000383c0000103f00007e3f00001c41000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -129790,7 +129790,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: fc420000
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a2c0000402c00007a2d0000b83500009438000068390000ea3900009e3a0000323c00000a3f0000783f000014410000
+    m_ExpandedIDs: 000000003e2c0000442c00007e2d0000bc350000983800006c390000ee390000a43a0000383c0000103f00007e3f00001c410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -129842,7 +129842,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 110}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 112
 --- !u!114 &23

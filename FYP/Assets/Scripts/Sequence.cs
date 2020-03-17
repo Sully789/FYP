@@ -1,8 +1,9 @@
-﻿/* Code from Unity 2017 Game AI Programming Book
- * https://github.com/PacktPublishing/Unity-2017-Game-AI-Programming-Third-Edition/tree/master/Chapter06/Assets/Scripts/Nodes
- * 
+﻿/* 
+ * Sean O'Sullivan | K00180620 | Year 4 | Final Year Project | Pathfinding Algorithm that uses A* and a Behaviour Tree to navigate a Platformer level
+ * Sequence is a composite node that works similarly to the Selector, but all child nodes need to return true for the sequence to return true
+ * Source: Unity 2017 Game AI Programming Third Edition published by Packt
+ * https://github.com/PacktPublishing/Unity-2017-Game-AI-Programming-Third-Edition/blob/master/Chapter06/Assets/Scripts/Nodes/Sequence.cs
 */
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

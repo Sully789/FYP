@@ -1,8 +1,9 @@
-﻿/* Code from Unity 2017 Game AI Programming Book
- * https://github.com/PacktPublishing/Unity-2017-Game-AI-Programming-Third-Edition/tree/master/Chapter06/Assets/Scripts/Nodes
- * 
+﻿/* 
+ * Sean O'Sullivan | K00180620 | Year 4 | Final Year Project | Pathfinding Algorithm that uses A* and a Behaviour Tree to navigate a Platformer level
+ * Action Node is a leaf node that passes in logic via a delegate for the Behaviour Tree
+ * Source: Unity 2017 Game AI Programming Third Edition published by Packt
+ * https://github.com/PacktPublishing/Unity-2017-Game-AI-Programming-Third-Edition/blob/master/Chapter06/Assets/Scripts/Nodes/ActionNode.cs
 */
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,7 +41,7 @@ public class ActionNode : Node
                 m_nodeState = NodeStates.RUNNING;
                 return m_nodeState;
             default:
-                m_nodeState = NodeStates.FAILURE;
+                m_nodeState = NodeStates.RUNNING;
                 return m_nodeState;
         }
     }

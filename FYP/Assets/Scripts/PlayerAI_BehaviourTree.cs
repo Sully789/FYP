@@ -1,4 +1,16 @@
-﻿using System.Collections;
+﻿/* 
+ * Sean O'Sullivan | K00180620 | Year 4 | Final Year Project | Pathfinding Algorithm that uses A* and a Behaviour Tree to navigate a Platformer level
+ * PlayerAI_BehaviourTree uses the Seeker class as well as a Behaviour Tree to Move, Jump and Shoot through the scene
+ * Adapted from Unity 2017 Game AI Programming Third Edition published by Packt
+ * Uses Aron Granberg's A* Pathfinding Project and Brackeys 2D Character Controller 
+ * Sources:
+ * https://github.com/PacktPublishing/Unity-2017-Game-AI-Programming-Third-Edition/blob/master/Chapter06/Assets/Scripts/Samples/CardGame/BehaviorTrees/EnemyBehaviorTree.cs
+ * https://github.com/PacktPublishing/Unity-2017-Game-AI-Programming-Third-Edition/blob/master/Chapter06/Assets/Scripts/Samples/MathTree.cs
+ * https://www.youtube.com/watch?v=dwcT-Dch0bA
+ * https://www.youtube.com/watch?v=jvtFUfJ6CP8
+ * https://arongranberg.com/astar/
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,57 +18,52 @@ using Pathfinding;
 
 public class PlayerAI_BehaviourTree : MonoBehaviour
 {
-  //  public GameObject player;
-    public GameObject enemy;
-    public GameObject goal;
-    
-    public Selector navigateScene;
-    public ActionNode moving;
-    public ActionNode jumping;
-    public ActionNode shooting;
-    public Sequence navigateSceneSeq;
+    public Selector navigateScene;          //Selector node that acts as the root node of the Behaviour Tree
+    public Sequence navigateSceneSeq;       //Sequence node that acts as the root node of the Behaviour Tree
+    public ActionNode moving;               //Leaf node on the Behaviour tree used for movement
+    public ActionNode jumpingGap;              //Leaf node on the Behaviour tree used for jumping
+    public ActionNode jumpingObstacle;              //Leaf node on the Behaviour tree used for jumping
+    public ActionNode shooting;             //Leaf node on the Behaviour tree used for shooting
 
+    public Transform player;            
     public Transform target;
     public CharacterController2D controller;
     public Animator animator;
-
-    public float speed = 200f;
-    public float nextWaypointDistance = 3;
-
-    // public float floatHeight;     // Desired floating height.
-    // public float liftForce;       // Force to apply when lifting the rigidbody.
-    // public float damping;         // Force reduction proportional to speed (reduces bouncing).
-
-    float horizontalMove = 1.0f;
-    float runSpeed = 40f;
-    bool jump = false;
-    bool crouch = false;
-    bool shoot = false;
-
-    public Transform player;
-
-    Path path;
-    int currentWaypoint = 0;
-    bool reachedEndOfPath = false;
-
-    Seeker seeker;
-    Rigidbody2D rb;
-
-    Grid grid;
-
-    Weapon fire;
-
-    public RaycastHit2D hit;
-    public Ray2D ray;
-    public RaycastHit2D jumpRay;
-    public RaycastHit2D shootRay;
-
     public Text movingText;
     public Text jumpingText;
     public Text shootingText;
 
     public delegate void TreeExecuted();
     public event TreeExecuted onTreeExecuted;
+
+    private Rigidbody2D rb;
+    private Grid grid;
+    private Weapon fire;
+    private RaycastHit2D jumpGapRay;
+    private RaycastHit2D jumpBlockRay;
+    private RaycastHit2D shootRay;
+
+    private int currentWaypoint = 0;
+    private bool reachedEndOfPath = false;
+
+    private float speed = 200f;
+    private float jumpGapRayDist = 3f;
+    private float jumpBlockRayDist = 1f;
+    private float shootRayDist = 100f;
+    private float nextWaypointDistance = 3;
+
+    private float horizontalMove = 1.0f;
+    private float runSpeed = 40f;
+    private bool jump = false;
+    private bool crouch = false;
+    private bool shoot = false;
+
+
+    private Path path;
+    private Seeker seeker;
+
+    private Vector2 velocity;
+    private Vector2 jumpVelocity;
 
     void Start()
     {
@@ -66,9 +73,10 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         grid = GetComponent<Grid>();
         fire = GetComponent<Weapon>();
 
-       // hit = GetComponent<RaycastHit2D>();
 
         InvokeRepeating("UpdatePath", 0f, .5f);
+        velocity = new Vector2(2f, 0f);
+        jumpVelocity = new Vector2(1f, 100f);
 
 
         //First the AI checks for an emeny and will shoot it if it sees one
@@ -77,39 +85,47 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         //If there is no enemy to shoot or gap to jump, the enemy will move towards the goal
 
         shooting = new ActionNode(ShootState);
-        jumping = new ActionNode(JumpState);
+        jumpingGap = new ActionNode(JumpState);
+        jumpingObstacle = new ActionNode(JumpState);
         moving = new ActionNode(MoveState);
 
         navigateScene = new Selector(new List<Node> {
             shooting,
-            jumping,
+            jumpingGap,
+            jumpingObstacle,
             moving,
         });
 
         navigateSceneSeq = new Sequence(new List<Node> {
             shooting,
-            jumping,
+            jumpingGap,
+            jumpingObstacle,
             moving,
         });
 
         // navigateScene.Evaluate();
         //navigateSceneSeq.Evaluate();
 
+
         InvokeRepeating("Evaluate", 0f, .5f);
     }
 
     public void Evaluate()
     {
-        navigateSceneSeq.Evaluate();
+        navigateScene.Evaluate();
         Execute();
     }
 
     private void Update()
     {
         UpdateUI();
-        //PathfindMethod();
+       // Raycast();
+    }
+
+    private void FixedUpdate()
+    {
+        PathfindMethod();
         Raycast();
-        Debug.Log("Reached End of path:" + reachedEndOfPath);
     }
 
     void Raycast()
@@ -117,8 +133,9 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         // Cast a ray straight down.
         //Raycast for gaps and enemies
         //  RaycastHit2D jumpGap = Physics2D.Raycast(transform.position, -Vector2.up);
-        jumpRay = Physics2D.Raycast(transform.position, -Vector2.up);
-        shootRay = Physics2D.Raycast(transform.position, Vector2.right);
+        jumpGapRay = Physics2D.Raycast(transform.position, -Vector2.up, jumpGapRayDist);
+        jumpBlockRay = Physics2D.Raycast(transform.position, Vector2.right, jumpBlockRayDist);
+        shootRay = Physics2D.Raycast(transform.position, Vector2.right, shootRayDist);
        // Jump(jumpGap);
       //  ShootAtEnemy(target);
     }
@@ -132,17 +149,15 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         else
         {
             TurnOffActionsUINoCo(movingText);
-            //StartCoroutine(TurnOffActionsUI(movingText));
         }
 
-        if (jumping.nodeState == NodeStates.RUNNING || jumping.nodeState == NodeStates.SUCCESS)
+        if (jumpingGap.nodeState == NodeStates.RUNNING || jumpingGap.nodeState == NodeStates.SUCCESS || jumpingObstacle.nodeState == NodeStates.SUCCESS || jumpingObstacle.nodeState == NodeStates.RUNNING)
         {
             TurnOnActionsUI(jumpingText);
         }
         else
         {
             TurnOffActionsUINoCo(jumpingText);
-            //StartCoroutine(TurnOffActionsUI(jumpingText));
         }
 
         if (shooting.nodeState == NodeStates.RUNNING || shooting.nodeState == NodeStates.SUCCESS)
@@ -152,7 +167,6 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         else
         {
             TurnOffActionsUINoCo(shootingText);
-            //StartCoroutine(TurnOffActionsUI(shootingText));
         }
 
     }
@@ -167,11 +181,6 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         text.gameObject.SetActive(false);
     }
 
-    private IEnumerator TurnOffActionsUI(Text text)
-    {
-        yield return new WaitForSeconds(2f);
-        text.gameObject.SetActive(false);
-    }
 
     private void Execute()
     {
@@ -190,37 +199,41 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
 
         }
 
-        if (jumping.nodeState == NodeStates.SUCCESS)
+        if (jumpingGap.nodeState == NodeStates.SUCCESS)
         {
             Debug.Log("The AI has jumped over a gap");
-            
+            JumpMethod(jumpGapRay);
+
+        }
+        else
+        {
+            Debug.Log("The AI has not detected a obstacle");
+            JumpMethod(jumpGapRay);
+        }
+
+        if (jumpingGap.nodeState == NodeStates.SUCCESS)
+        {
+            Debug.Log("The AI has jumped over an obstacle");
+            JumpBlockMethod(jumpBlockRay);
+
         }
         else
         {
             Debug.Log("The AI has not detected a gap");
-            JumpMethod(jumpRay);
+            JumpBlockMethod(jumpBlockRay);
         }
 
         if (moving.nodeState == NodeStates.SUCCESS)
         {
             Debug.Log("The AI is moving towards the goal");
-            PathfindMethod();
 
         }
         else
         {
             Debug.Log("The AI has not reached the goal");
-            PathfindMethod();
-            // PathfindMethod();
+
         }
 
-        
-
-        
-        //else
-       // {
-       //     Debug.Log("The AI has reached the Goal.");
-       // }
         if (onTreeExecuted != null)
         {
             onTreeExecuted();
@@ -229,7 +242,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
 
     private NodeStates MoveState()
     {
-        if (reachedEndOfPath == true)
+        if (reachedEndOfPath == false)
         {
             return NodeStates.SUCCESS;
         }
@@ -262,144 +275,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
             return NodeStates.FAILURE;
         }
     }
-    /*
-    public NodeStates Move()
-    {
-        if (path == null)
-        {
-            Debug.Log("Move Node Null");
-            return NodeStates.RUNNING;
-        }
-
-        if (currentWaypoint >= path.vectorPath.Count)
-        {
-            reachedEndOfPath = true;
-            return NodeStates.SUCCESS;
-        }
-        else
-        {
-            reachedEndOfPath = false;
-            Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-            Vector2 force = direction * speed * Time.deltaTime;
-
-            rb.AddForce(force);
-
-            float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
-
-            if (distance < nextWaypointDistance)
-            {
-                currentWaypoint++;
-            }
-
-            if (force.x >= 0.01f)
-            {
-                // player.localScale = new Vector3(-1f, 1f, 1f);
-                controller.Move((horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-                // animator.SetFloat("Speed", Mathf.Abs(force.x));
-            }
-            else if (force.x <= 0.01f)
-            {
-                // player.localScale = new Vector3(1f, 1f, 1f);
-                controller.Move(-(horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-                //animator.SetFloat("Speed", Mathf.Abs(force.x));
-            }
-            return NodeStates.RUNNING;
-        }
-    }
-
-    private NodeStates Jump()
-    {
-        if(hit.collider == null)
-        {
-            Debug.Log("No ray");
-        }
-
-        //if Raycast detects gap, jump over gap
-        // If it hits something...
-        if (hit.collider != null)
-        {
-            Debug.Log("Jump Ray Hit: " + hit.transform.name);
-            return NodeStates.FAILURE;
-        }
-        else
-        {
-            Debug.Log("No ground detected");
-            jump = true;
-            return NodeStates.RUNNING;
-        }
-        return NodeStates.SUCCESS;
-    }
-
-    private NodeStates Shoot() //if raycast detects enemy, shoot
-    {
-        //if Raycast detects enemy, shoot at enemy
-        if (hit.collider != null && hit.collider.tag != "Player")
-        {
-            Debug.Log("Inital Ray is hitting: " + hit.transform.name);
-            if (hit.collider.tag == "Enemy")
-            {
-                fire.GetComponent<Weapon>().Shoot();
-                Debug.Log("Ray After Check is hitting: " + hit.transform.name);
-                return NodeStates.RUNNING;
-            }
-            else
-            {
-                Debug.Log("No target detected in if");
-                return NodeStates.SUCCESS;
-            }
-
-        }
-        else
-        {
-            Debug.Log("No target detected.");
-            return NodeStates.FAILURE;
-        }
-    }
-    */
-    /*
-    void Pathfind()
-    {
-        if (path == null)
-        {
-            return;
-        }
-
-        if (currentWaypoint >= path.vectorPath.Count)
-        {
-            reachedEndOfPath = true;
-            return;
-        }
-        else
-        {
-            reachedEndOfPath = false;
-        }
-
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
-
-        rb.AddForce(force);
-
-        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
-
-        if (distance < nextWaypointDistance)
-        {
-            currentWaypoint++;
-        }
-
-        if (force.x >= 0.01f)
-        {
-            // player.localScale = new Vector3(-1f, 1f, 1f);
-            controller.Move((horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-            // animator.SetFloat("Speed", Mathf.Abs(force.x));
-        }
-        else if (force.x <= 0.01f)
-        {
-            // player.localScale = new Vector3(1f, 1f, 1f);
-            controller.Move(-(horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-            //animator.SetFloat("Speed", Mathf.Abs(force.x));
-        }
-    }
-    */
+   
     void OnPathComplete(Path p)
     {
         if (!p.error)
@@ -423,12 +299,29 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         // If it hits something...
         if (hit.collider != null)
         {
-            Debug.Log("Jump Ray Hit: " + hit.transform.name);
+            jump = false;
+            animator.SetBool("IsJumping", false);
         }
         else
         {
-            Debug.Log("No ground detected");
             jump = true;
+            animator.SetBool("IsJumping", true);
+        }
+    }
+
+    void JumpBlockMethod(RaycastHit2D hit)
+    {
+        //if Raycast detects gap, jump over gap
+        // If it hits something...
+        if (hit.collider.tag != null)
+        {
+            jump = true;
+            animator.SetBool("IsJumping", true);
+        }
+        else
+        {  
+            jump = false;
+            animator.SetBool("IsJumping", false);
         }
     }
 
@@ -437,312 +330,75 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         //if Raycast detects enemy, shoot at enemy
         if (hit.collider != null && hit.collider.tag != "Player")
         {
-            Debug.Log("Inital Ray is hitting: " + hit.transform.name);
             if (hit.collider.tag == "Enemy")
             {
                 fire.GetComponent<Weapon>().Shoot();
                 shoot = true;
-                Debug.Log("Ray After Check is hitting: " + hit.transform.name);
             }
             else
             {
-                Debug.Log("No target detected in if");
                 shoot = false;
             }
 
         }
-
         else
         {
-            Debug.Log("No target detected.");
             shoot = false;
         }
     }
 
     void PathfindMethod()
     {
+        //if statements returns if no path has been assigned
         if (path == null)
         {
-            Debug.Log("Path is null");
             return;
         }
 
+        //if statement returns if the agent has reached the end of the path
         else if (currentWaypoint >= path.vectorPath.Count)
         {
-            Debug.Log("Reached end of path is true");
             reachedEndOfPath = true;
             return;
         }
+
+        //if not, the reachedEndOfPath boolean is set to false
         else
         {
-            Debug.Log("Reached end of path is false, far else");
             reachedEndOfPath = false;
+
+            //Vector 2 that gets the direction that the agent must travel towards
             Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+
+            //Vector 2 that assigns how fast the agent moves
             Vector2 force = direction * speed * Time.deltaTime;
 
+            //AddForce method moves the Rigidbody of the agent
             rb.AddForce(force);
 
+            //Vector 2 that updates the distance of the agent from the goal
             float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
+            //if statement updates the waypoint
             if (distance < nextWaypointDistance)
             {
-                Debug.Log("In if 1");
                 currentWaypoint++;
             }
 
+            //Changes direction of the agent depending on where they are moving
             if (force.x >= 0.01f)
             {
-                Debug.Log("In if 2");
-                // player.localScale = new Vector3(-1f, 1f, 1f);
                 controller.Move((horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-                // animator.SetFloat("Speed", Mathf.Abs(force.x));
+                animator.SetFloat("Speed", Mathf.Abs(force.x));  //Adds run animation for demo
             }
             else if (force.x <= 0.01f)
             {
-                Debug.Log("In if 3");
-                //player.localScale = new Vector3(1f, 1f, 1f);
                 controller.Move(-(horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-                //animator.SetFloat("Speed", Mathf.Abs(force.x));
+                animator.SetFloat("Speed", Mathf.Abs(force.x)); //Adds run animation for demo
             }
             return;
         }
-
-
-        Debug.Log("End of pathfind method");
     }
 
-    /*
-    void Pathfind()
-    {
-        if (path == null)
-        {
-            return;
-        }
-
-        if (currentWaypoint >= path.vectorPath.Count)
-        {
-            reachedEndOfPath = true;
-            return;
-        }
-        else
-        {
-            reachedEndOfPath = false;
-        }
-
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
-
-        rb.AddForce(force);
-
-        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
-
-        if (distance < nextWaypointDistance)
-        {
-            currentWaypoint++;
-        }
-
-        if (force.x >= 0.01f)
-        {
-            // player.localScale = new Vector3(-1f, 1f, 1f);
-            controller.Move((horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-            // animator.SetFloat("Speed", Mathf.Abs(force.x));
-        }
-        else if (force.x <= 0.01f)
-        {
-            // player.localScale = new Vector3(1f, 1f, 1f);
-            controller.Move(-(horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-            //animator.SetFloat("Speed", Mathf.Abs(force.x));
-        }
-    }
-
-    void Raycast()
-    {
-        // Cast a ray straight down.
-        //Raycast for gaps and enemies
-        //  RaycastHit2D jumpGap = Physics2D.Raycast(transform.position, -Vector2.up);
-        RaycastHit2D jumpGap = Physics2D.Raycast(transform.position, -Vector2.up);
-        RaycastHit2D target = Physics2D.Raycast(transform.position, Vector2.right);
-        Jump(jumpGap);
-        ShootAtEnemy(target);
-    }
-
-    void Jump(RaycastHit2D hit)
-    {
-        //if Raycast detects gap, jump over gap
-        // If it hits something...
-        if (hit.collider != null)
-        {
-            Debug.Log("Jump Ray Hit: " + hit.transform.name);
-        }
-        else
-        {
-            Debug.Log("No ground detected");
-            jump = true;
-        }
-
-    }
-
-    void Crouch()
-    {
-        //if Raycast detects overhead obstacle, duck under osbtacle
-
-    }
-
-    void ShootAtEnemy(RaycastHit2D hit)
-    {
-        //if Raycast detects enemy, shoot at enemy
-        if (hit.collider != null && hit.collider.tag != "Player")
-        {
-            Debug.Log("Inital Ray is hitting: " + hit.transform.name);
-            if (hit.collider.tag == "Enemy")
-            {
-                fire.GetComponent<Weapon>().Shoot();
-                Debug.Log("Ray After Check is hitting: " + hit.transform.name);
-            }
-            else
-            {
-                Debug.Log("No target detected in if");
-
-            }
-
-        }
-
-        else
-        {
-            Debug.Log("No target detected.");
-        }
-    }
-
-    /*
-
-
-    /*
-    private Player data;
-
-    public ActionNode moveCheckNode;
-    public ActionNode jumpCheckNode;
-    public ActionNode shootCheckNode;
-    public ActionNode goalCheckNode;
-    public Sequence moveToGoalSequence;
-    public Selector rootNode;
-
-    public delegate void TreeExecuted();
-    public event TreeExecuted onTreeExecuted;
-
-    public delegate void NodePassed(string trigger);
-    
-	void Start ()
-    {
-        moveCheckNode = new ActionNode(MoveCheck);
-
-        jumpCheckNode = new ActionNode(JumpCheck);
-
-        shootCheckNode = new ActionNode(ShootCheck);
-
-        goalCheckNode = new ActionNode(GoalCheck);
-
-        moveToGoalSequence = new Sequence(new List<Node> {
-            shootCheckNode,
-            //moveCheckNode,
-            jumpCheckNode,
-        });
-
-        rootNode = new Selector(new List<Node> {
-           // moveCheckNode,
-            shootCheckNode,
-            jumpCheckNode,
-            moveToGoalSequence,
-        });
-
-        Evaluate();
-	}
-
-    public void SetPlayerData(Player ai) {
-        data = ai;
-    }
-	
-	public void Evaluate() {
-        rootNode.Evaluate();
-        StartCoroutine(Execute());
-    }
-
-    private IEnumerator Execute() {
-        Debug.Log("The AI is thinking...");
-        yield return new WaitForSeconds(2.5f);
-
-        if (shootCheckNode.nodeState == NodeStates.SUCCESS)
-        {
-            Debug.Log("The AI decided to shoot");
-            data.Shooting();
-        }
-        else if (moveCheckNode.nodeState == NodeStates.SUCCESS)
-        {
-            Debug.Log("The AI is moving.");
-            data.Moving();
-        }
-        else if (jumpCheckNode.nodeState == NodeStates.SUCCESS)
-        {
-            Debug.Log("The AI is jumping");
-            data.Jumping();
-        }
-        else
-        {
-            Debug.Log("The AI has reached the goal");
-            data.AtGoal();
-        }
-
-        if(onTreeExecuted != null) {
-            onTreeExecuted();
-        }
-    }
-
-    private NodeStates MoveCheck()
-    {
-        if (data.IsMoving)
-        {
-            return NodeStates.SUCCESS;
-        }
-        else
-        {
-            return NodeStates.FAILURE;
-        }
-    }
-
-    private NodeStates JumpCheck()
-    {
-        if (data.IsJumping)
-        {
-            return NodeStates.SUCCESS;
-        }
-        else
-        {
-            return NodeStates.FAILURE;
-        }
-    }
-
-    private NodeStates ShootCheck()
-    {
-        if (data.IsShooting)
-        {
-            return NodeStates.SUCCESS;
-        }
-        else
-        {
-            return NodeStates.FAILURE;
-        }
-    }
-
-    private NodeStates GoalCheck()
-    {
-        if (data.IsAtGoal)
-        {
-            return NodeStates.SUCCESS;
-        }
-        else
-        {
-            return NodeStates.FAILURE;
-        }
-    }
-
-    */
+   
 }

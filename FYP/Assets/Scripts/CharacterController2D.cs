@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/* 
+ * Sean O'Sullivan | K00180620 | Year 4 | Final Year Project | Pathfinding Algorithm that uses A* and a Behaviour Tree to navigate a Platformer level
+ * Generic character controller used to control the Player AI
+ * Source: Brackeys 2D Platformer Game tutorial
+ * https://github.com/Brackeys/2D-Character-Controller/blob/master/CharacterController2D.cs
+*/
+using UnityEngine;
 using UnityEngine.Events;
 
 public class CharacterController2D : MonoBehaviour

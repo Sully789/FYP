@@ -1,24 +1,17 @@
-﻿using System.Collections;
+﻿/* 
+ * Sean O'Sullivan | K00180620 | Year 4 | Final Year Project | Pathfinding Algorithm that uses A* and a Behaviour Tree to navigate a Platformer level
+ * PlayerAI_MCTS intended to use a Monte Carlo Tree Search to handle the navigation of the scene but was not used, only pseudocode 
+ * References include Monte Mario and Monster Carlo papers
+ * https://adamsmith.as/papers/monster-carlo-cig18.pdf
+ * http://julian.togelius.com/Jacobsen2014Monte.pdf
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAI_MCTS : MonoBehaviour
 {
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    //
+    /*
     void MCTS()
     {
         //While game active... in Update method?
@@ -68,4 +61,5 @@ public class PlayerAI_MCTS : MonoBehaviour
     {
         //pick child with highest number of visits
     }
+    */
 }

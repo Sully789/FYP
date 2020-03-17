@@ -1,16 +1,22 @@
-﻿using System.Collections;
+﻿/* 
+ * Sean O'Sullivan | K00180620 | Year 4 | Final Year Project | Pathfinding Algorithm that uses A* and a Behaviour Tree to navigate a Platformer level
+ * PlayerMovement class was used in testing the scene, the algrorithm was built on these movements, class is unused 
+ * Source: Brackeys 2D Platformer Game Tutorial
+ * https://www.youtube.com/watch?v=dwcT-Dch0bA
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    /*
     public CharacterController2D controller;
     public Animator animator;
     float horizontalMove = 0f;
     float runSpeed = 40f;
     bool jump = false;
     bool crouch = false;
-    bool activeControl = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +28,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         PlayerInput();
-        SwitchActiveControl();
-        Debug.Log(activeControl);
 
     }
 
@@ -65,16 +69,5 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
     }
-
-    void SwitchActiveControl()
-    {
-        if (Input.GetButtonDown("ActiveControl"))
-        {
-            activeControl = true;
-        }
-        else
-        {
-            activeControl = false;
-        }
-    }
+    */
 }

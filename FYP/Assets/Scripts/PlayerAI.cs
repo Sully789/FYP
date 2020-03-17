@@ -1,10 +1,19 @@
-﻿using System.Collections;
+﻿/* 
+ * Sean O'Sullivan | K00180620 | Year 4 | Final Year Project | Pathfinding Algorithm that uses A* and a Behaviour Tree to navigate a Platformer level
+ * PlayerAI was the original class that was used to navigate the scene, PlayerAI_BehaviourTree expanded on this class and replaced it
+ * Apdated from Brackeys 2D Platformer Game Tutorial
+ * https://www.youtube.com/watch?v=dwcT-Dch0bA
+ * https://www.youtube.com/watch?v=jvtFUfJ6CP8
+ * https://arongranberg.com/astar/
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
 public class PlayerAI : MonoBehaviour
 {
+    /*
     public Transform target;
     public CharacterController2D controller;
     public Animator animator;
@@ -12,9 +21,6 @@ public class PlayerAI : MonoBehaviour
     public float speed = 200f;
     public float nextWaypointDistance = 3;
 
-   // public float floatHeight;     // Desired floating height.
-   // public float liftForce;       // Force to apply when lifting the rigidbody.
-   // public float damping;         // Force reduction proportional to speed (reduces bouncing).
 
     float horizontalMove = 1.0f;
     float runSpeed = 40f;
@@ -50,14 +56,7 @@ public class PlayerAI : MonoBehaviour
     // FixedUpdate is called a fixed number of times per second
     void FixedUpdate()
     {
-         Pathfind();
-        // Movement();
-      //  if (reachedEndOfPath == false)
-      //  {
-        //    Movement();
-            //InvokeRepeating("Movement", 0f, .5f);
-       // }
-           
+        Pathfind();           
         Raycast();
     }
 
@@ -92,15 +91,13 @@ public class PlayerAI : MonoBehaviour
 
         if (force.x >= 0.01f)
         {
-           // player.localScale = new Vector3(-1f, 1f, 1f);
             controller.Move((horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-            // animator.SetFloat("Speed", Mathf.Abs(force.x));
+             animator.SetFloat("Speed", Mathf.Abs(force.x));
         }
         else if (force.x <= 0.01f)
         {
-           // player.localScale = new Vector3(1f, 1f, 1f);
             controller.Move(-(horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-            //animator.SetFloat("Speed", Mathf.Abs(force.x));
+            animator.SetFloat("Speed", Mathf.Abs(force.x));
         }
     }
 
@@ -123,18 +120,13 @@ public class PlayerAI : MonoBehaviour
 
     void Movement()
     {
-       // while(reachedEndOfPath != true)
-       // {
-            controller.Move((horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
-      //  }
-
+        controller.Move((horizontalMove * runSpeed) * Time.fixedDeltaTime, crouch, jump);
     }
 
     void Raycast()
     {
         // Cast a ray straight down.
         //Raycast for gaps and enemies
-        //  RaycastHit2D jumpGap = Physics2D.Raycast(transform.position, -Vector2.up);
         RaycastHit2D jumpGap = Physics2D.Raycast(transform.position, -Vector2.up);
         RaycastHit2D target = Physics2D.Raycast(transform.position, Vector2.right);
         Jump(jumpGap);
@@ -148,11 +140,14 @@ public class PlayerAI : MonoBehaviour
         if (hit.collider != null)
         {
             Debug.Log("Jump Ray Hit: " + hit.transform.name);
+            jump = false;
+            animator.SetBool("IsJumping", false);
         }
         else
         {
             Debug.Log("No ground detected");
             jump = true;
+            animator.SetBool("IsJumping", true);
         }
 
     }
@@ -160,7 +155,6 @@ public class PlayerAI : MonoBehaviour
     void Crouch()
     {
         //if Raycast detects overhead obstacle, duck under osbtacle
-
     }
 
     void ShootAtEnemy(RaycastHit2D hit)
@@ -187,4 +181,5 @@ public class PlayerAI : MonoBehaviour
             Debug.Log("No target detected.");
         }
     }
+    */
 }
