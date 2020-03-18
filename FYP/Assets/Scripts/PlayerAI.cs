@@ -13,7 +13,7 @@ using Pathfinding;
 
 public class PlayerAI : MonoBehaviour
 {
-    /*
+    
     public Transform target;
     public CharacterController2D controller;
     public Animator animator;
@@ -181,5 +181,5 @@ public class PlayerAI : MonoBehaviour
             Debug.Log("No target detected.");
         }
     }
-    */
+    
 }

@@ -91,14 +91,14 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
 
         navigateScene = new Selector(new List<Node> {
             shooting,
-            jumpingGap,
             jumpingObstacle,
+            jumpingGap,
             moving,
         });
 
         navigateSceneSeq = new Sequence(new List<Node> {
-            shooting,
             jumpingGap,
+            shooting,
             jumpingObstacle,
             moving,
         });
@@ -107,7 +107,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         //navigateSceneSeq.Evaluate();
 
 
-        InvokeRepeating("Evaluate", 0f, .5f);
+        InvokeRepeating("Evaluate", 0f, .25f);
     }
 
     public void Evaluate()
@@ -142,7 +142,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
 
     void UpdateUI()
     {
-        if(moving.nodeState == NodeStates.RUNNING || moving.nodeState == NodeStates.SUCCESS)
+        if (moving.nodeState == NodeStates.SUCCESS)
         {
             TurnOnActionsUI(movingText);
         }
@@ -151,7 +151,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
             TurnOffActionsUINoCo(movingText);
         }
 
-        if (jumpingGap.nodeState == NodeStates.RUNNING || jumpingGap.nodeState == NodeStates.SUCCESS || jumpingObstacle.nodeState == NodeStates.SUCCESS || jumpingObstacle.nodeState == NodeStates.RUNNING)
+        if(jumpingGap.nodeState == NodeStates.SUCCESS || jumpingObstacle.nodeState == NodeStates.SUCCESS)
         {
             TurnOnActionsUI(jumpingText);
         }
@@ -160,7 +160,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
             TurnOffActionsUINoCo(jumpingText);
         }
 
-        if (shooting.nodeState == NodeStates.RUNNING || shooting.nodeState == NodeStates.SUCCESS)
+        if(shooting.nodeState == NodeStates.SUCCESS)
         {
             TurnOnActionsUI(shootingText);
         }
@@ -186,6 +186,18 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
     {
         Debug.Log("The AI is thinking...");
 
+        if (jumpingGap.nodeState == NodeStates.SUCCESS)
+        {
+            Debug.Log("The AI has jumped over a gap");
+            JumpMethod(jumpGapRay);
+
+        }
+        else
+        {
+            Debug.Log("The AI has not detected a gap");
+            JumpMethod(jumpGapRay);
+        }
+
         if (shooting.nodeState == NodeStates.SUCCESS)
         {
             Debug.Log("The AI is shooting an Enemy");
@@ -198,20 +210,8 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
             ShootAtEnemyMethod(shootRay);
 
         }
-
-        if (jumpingGap.nodeState == NodeStates.SUCCESS)
-        {
-            Debug.Log("The AI has jumped over a gap");
-            JumpMethod(jumpGapRay);
-
-        }
-        else
-        {
-            Debug.Log("The AI has not detected a obstacle");
-            JumpMethod(jumpGapRay);
-        }
-
-        if (jumpingGap.nodeState == NodeStates.SUCCESS)
+        
+        if (jumpingObstacle.nodeState == NodeStates.SUCCESS)
         {
             Debug.Log("The AI has jumped over an obstacle");
             JumpBlockMethod(jumpBlockRay);
@@ -219,10 +219,10 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         }
         else
         {
-            Debug.Log("The AI has not detected a gap");
+            Debug.Log("The AI has not detected an obstacle");
             JumpBlockMethod(jumpBlockRay);
         }
-
+        
         if (moving.nodeState == NodeStates.SUCCESS)
         {
             Debug.Log("The AI is moving towards the goal");
@@ -313,7 +313,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
     {
         //if Raycast detects gap, jump over gap
         // If it hits something...
-        if (hit.collider.tag != null)
+        if (hit.collider != null)
         {
             jump = true;
             animator.SetBool("IsJumping", true);
