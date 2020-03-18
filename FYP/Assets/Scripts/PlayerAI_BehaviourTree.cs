@@ -18,84 +18,73 @@ using Pathfinding;
 
 public class PlayerAI_BehaviourTree : MonoBehaviour
 {
-    public Selector navigateScene;          //Selector node that acts as the root node of the Behaviour Tree
-    public Sequence navigateSceneSeq;       //Sequence node that acts as the root node of the Behaviour Tree
-    public ActionNode moving;               //Leaf node on the Behaviour tree used for movement
-    public ActionNode jumpingGap;              //Leaf node on the Behaviour tree used for jumping
-    public ActionNode jumpingObstacle;              //Leaf node on the Behaviour tree used for jumping
-    public ActionNode shooting;             //Leaf node on the Behaviour tree used for shooting
+    public Selector navigateScene;              //Selector node that acts as the root node of the Behaviour Tree
+    public Sequence navigateSceneSeq;           //Sequence node that acts as the root node of the Behaviour Tree
+    public ActionNode moving;                   //Leaf node on the Behaviour tree used for movement
+    public ActionNode jumpingGap;               //Leaf node on the Behaviour tree used for jumping
+    public ActionNode jumpingObstacle;          //Leaf node on the Behaviour tree used for jumping
+    public ActionNode shooting;                 //Leaf node on the Behaviour tree used for shooting
 
-    public Transform player;            
-    public Transform target;
-    public CharacterController2D controller;
-    public Animator animator;
-    public Text movingText;
+    public Transform player;                    //Transform to hold the players location
+    public Transform target;                    //Transform to hold the Goals location, used by the Seeker class
+    public CharacterController2D controller;    //Character controller used to move the agent
+    public Animator animator;                   //Animation used for demoing purposes
+    public Text movingText;                     //Text objects to show what Action the agent is taking
     public Text jumpingText;
     public Text shootingText;
 
-    public delegate void TreeExecuted();
-    public event TreeExecuted onTreeExecuted;
+    private Rigidbody2D rb;                     //Rigidbody used for moving the agent and collisons
+    private Grid grid;                          //grid used by Seeker class
+    private Weapon fire;                        //fire used by Weapin class
+    private RaycastHit2D jumpGapRay;            //Raycast used for agent to detect gaps
+    private RaycastHit2D jumpBlockRay;          //Raycast used for agent to detect Obstacles
+    private RaycastHit2D shootRay;              //Raycast used to detect Enemies
 
-    private Rigidbody2D rb;
-    private Grid grid;
-    private Weapon fire;
-    private RaycastHit2D jumpGapRay;
-    private RaycastHit2D jumpBlockRay;
-    private RaycastHit2D shootRay;
+    private int currentWaypoint = 0;            //Waypoints used by Seeker class
+    private bool reachedEndOfPath = false;      //boolean variable used to track if agent has reached the goal
 
-    private int currentWaypoint = 0;
-    private bool reachedEndOfPath = false;
+    private float speed = 200f;                 //speed at which the agent moves
+    private float jumpGapRayDist = 3f;          //distance of Raycast that is used to detect gaps
+    private float jumpBlockRayDist = 1f;        //distance of Raycast that is used to detect obstacles
+    private float shootRayDist = 100f;          //distance of Raycast that is used to detect enemies
+    private float nextWaypointDistance = 3;     //distance to the next waypoint used by Seeker class
 
-    private float speed = 200f;
-    private float jumpGapRayDist = 3f;
-    private float jumpBlockRayDist = 1f;
-    private float shootRayDist = 100f;
-    private float nextWaypointDistance = 3;
+    private float horizontalMove = 1.0f;        //used by Character Controller to move
+    private float runSpeed = 40f;               //speed used by Character Controller
+    private bool jump = false;                  //boolean variable used by tree to track if agent has jumped
+    private bool crouch = false;                //boolean variable used by tree to track if agent has crouched, unused
+    private bool shoot = false;                 //boolean variable used by tree to track if agent has fired at enemy
 
-    private float horizontalMove = 1.0f;
-    private float runSpeed = 40f;
-    private bool jump = false;
-    private bool crouch = false;
-    private bool shoot = false;
-
-
-    private Path path;
-    private Seeker seeker;
-
-    private Vector2 velocity;
-    private Vector2 jumpVelocity;
+    private Path path;                          //path is used by Seeker class and Pathfind method to layout path for agent
+    private Seeker seeker;                      //Imported library that maps out the path for the agent
 
     void Start()
     {
-        Physics2D.queriesStartInColliders = false; // Allow Raycast to not detect itself
-        seeker = GetComponent<Seeker>();
-        rb = GetComponent<Rigidbody2D>();
-        grid = GetComponent<Grid>();
-        fire = GetComponent<Weapon>();
+        Physics2D.queriesStartInColliders = false;  //Allows Raycast to not detect itself
+        seeker = GetComponent<Seeker>();            //Instantiates the Seeker
+        rb = GetComponent<Rigidbody2D>();           //Instantiates the Rigidbody
+        grid = GetComponent<Grid>();                //Instantiates the Grid
+        fire = GetComponent<Weapon>();              //Instantiates the Weapon
 
+        InvokeRepeating("UpdatePath", 0f, .5f);     //Updates the path dynamically
 
-        InvokeRepeating("UpdatePath", 0f, .5f);
-        velocity = new Vector2(2f, 0f);
-        jumpVelocity = new Vector2(1f, 100f);
-
-
-        //First the AI checks for an emeny and will shoot it if it sees one
-        //Next the AI will check for a gap, if there is no gap this node fails
-
-        //If there is no enemy to shoot or gap to jump, the enemy will move towards the goal
-
+        //Instantiating the Behaviour Tree
+        //First the AI checks for an enemy and will shoot it if it sees one
         shooting = new ActionNode(ShootState);
+        //Next the AI will check for a gap, if there is no gap this node fails
         jumpingGap = new ActionNode(JumpState);
+        //Next the AI will check for a obstacle, if there is no obstacle this node fails
         jumpingObstacle = new ActionNode(JumpState);
+        //If there is no enemy to shoot or gap to jump, the enemy will move towards the goal
         moving = new ActionNode(MoveState);
-
+        //Setting up the Action Nodes on the Selector Composite node
         navigateScene = new Selector(new List<Node> {
             shooting,
             jumpingObstacle,
             jumpingGap,
             moving,
         });
-
+        //Setting up the Action Nodes on the Sequence Composite node, this is unused
         navigateSceneSeq = new Sequence(new List<Node> {
             jumpingGap,
             shooting,
@@ -103,46 +92,45 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
             moving,
         });
 
-        // navigateScene.Evaluate();
-        //navigateSceneSeq.Evaluate();
-
-
-        InvokeRepeating("Evaluate", 0f, .25f);
+        InvokeRepeating("Evaluate", 0f, .001f);      //Updates the AI's next decision
     }
-
+    
+    //Behaviour Tree is called here and its nodes are executed
     public void Evaluate()
     {
         navigateScene.Evaluate();
         Execute();
     }
 
+    //The UI that displays the current task the agent is taken is shown each frame
     private void Update()
     {
         UpdateUI();
-       // Raycast();
+        Raycast();
     }
 
+    //The Pathfinding and the Raycasts are done in the FixedUpdate method as they include Physics calculations
     private void FixedUpdate()
     {
         PathfindMethod();
         Raycast();
     }
 
+    //Raycast method handles the raycasts that are used to detect enemies, obstacles and gaps
     void Raycast()
     {
-        // Cast a ray straight down.
-        //Raycast for gaps and enemies
-        //  RaycastHit2D jumpGap = Physics2D.Raycast(transform.position, -Vector2.up);
+        //Cast a ray straight down, if it does not detect anything there is a gap
         jumpGapRay = Physics2D.Raycast(transform.position, -Vector2.up, jumpGapRayDist);
+        //Cast a ray straight ahead, if it detects something, there is an obstacle
         jumpBlockRay = Physics2D.Raycast(transform.position, Vector2.right, jumpBlockRayDist);
+        //Cast a ray straight ahead, longer than the previous ray, if it detects something, there is an enemy
         shootRay = Physics2D.Raycast(transform.position, Vector2.right, shootRayDist);
-       // Jump(jumpGap);
-      //  ShootAtEnemy(target);
     }
 
+    //Turns on UI elements to indicate what action the agent is currently taking
     void UpdateUI()
     {
-        if (moving.nodeState == NodeStates.SUCCESS)
+        if (moving.nodeState == NodeStates.SUCCESS) //Turns on if the agent is moving
         {
             TurnOnActionsUI(movingText);
         }
@@ -151,16 +139,16 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
             TurnOffActionsUINoCo(movingText);
         }
 
-        if(jumpingGap.nodeState == NodeStates.SUCCESS || jumpingObstacle.nodeState == NodeStates.SUCCESS)
+        if(jumpingGap.nodeState == NodeStates.SUCCESS || jumpingObstacle.nodeState == NodeStates.SUCCESS)   //Turns on if the agent is jumping
         {
             TurnOnActionsUI(jumpingText);
         }
         else
         {
-            TurnOffActionsUINoCo(jumpingText);
+            StartCoroutine(TurnOffActionsUI(jumpingText));
         }
 
-        if(shooting.nodeState == NodeStates.SUCCESS)
+        if(shooting.nodeState == NodeStates.SUCCESS)    //Turns on if the agent is shooting
         {
             TurnOnActionsUI(shootingText);
         }
@@ -171,17 +159,26 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
 
     }
 
+    //Method turns on the required UI
     private void TurnOnActionsUI(Text text)
     {
         text.gameObject.SetActive(true);
     }
 
+    //Method turns off the required UI
     private void TurnOffActionsUINoCo(Text text)
     {
         text.gameObject.SetActive(false);
     }
 
+    //Coroutine that leaves UI elements on screen for a few seconds before turning off
+    private IEnumerator TurnOffActionsUI(Text text)
+    {
+        yield return new WaitForSeconds(3f);
+        text.gameObject.SetActive(false);
+    }
 
+    //Main method of the Behaviour Tree, Debug messages display info on what the AI is currently evaluating
     private void Execute()
     {
         Debug.Log("The AI is thinking...");
@@ -190,7 +187,6 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         {
             Debug.Log("The AI has jumped over a gap");
             JumpMethod(jumpGapRay);
-
         }
         else
         {
@@ -223,6 +219,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
             JumpBlockMethod(jumpBlockRay);
         }
         
+        //Could not get a sufficent movement working within tree, Movement is instead in PathfindingMethod
         if (moving.nodeState == NodeStates.SUCCESS)
         {
             Debug.Log("The AI is moving towards the goal");
@@ -230,16 +227,12 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         }
         else
         {
-            Debug.Log("The AI has not reached the goal");
+            Debug.Log("The AI has reached the goal");
 
-        }
-
-        if (onTreeExecuted != null)
-        {
-            onTreeExecuted();
         }
     }
 
+    //Returns a Successful node to the Behaviour Tree if the agent has reached the end of the path
     private NodeStates MoveState()
     {
         if (reachedEndOfPath == false)
@@ -252,6 +245,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         }
     }
 
+    //Returns a Successful node to the Behaviour Tree if the agent has jumped
     private NodeStates JumpState()
     {
         if (jump == true)
@@ -264,6 +258,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         }
     }
 
+    //Returns a Successful node to the Behaviour Tree if the agent has fired at an enemy
     private NodeStates ShootState()
     {
         if (shoot == true)
@@ -275,7 +270,8 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
             return NodeStates.FAILURE;
         }
     }
-   
+
+    //Used by Seeker class to clear waypoints
     void OnPathComplete(Path p)
     {
         if (!p.error)
@@ -285,6 +281,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         }
     }
 
+    //Used by Seeker class to update the path the agent will take
     void UpdatePath()
     {
         if (seeker.IsDone())
@@ -293,38 +290,57 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         }
     }
 
+    //Returns a boolean to the Controller that is used when the agent needs to jump over a gap
     void JumpMethod(RaycastHit2D hit)
     {
         //if Raycast detects gap, jump over gap
-        // If it hits something...
-        if (hit.collider != null)
+        if (hit.collider != null && hit.collider.tag != "Player")
+        {
+            if (hit.collider.tag != "Tilemap")
+            {
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
+            else
+            {
+                jump = false;
+                animator.SetBool("IsJumping", false);
+            }
+
+        }
+        else
         {
             jump = false;
             animator.SetBool("IsJumping", false);
         }
-        else
-        {
-            jump = true;
-            animator.SetBool("IsJumping", true);
-        }
     }
 
+    //Returns a boolean to the Controller that is used when the agent needs to jump over an obstacle
     void JumpBlockMethod(RaycastHit2D hit)
     {
-        //if Raycast detects gap, jump over gap
-        // If it hits something...
-        if (hit.collider != null)
+        //if Raycast detects obstacle, jump over obstacle
+        if (hit.collider != null && hit.collider.tag != "Player")
         {
-            jump = true;
-            animator.SetBool("IsJumping", true);
+            if (hit.collider.tag == "Tilemap")
+            {
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
+            else
+            {
+                jump = false;
+                animator.SetBool("IsJumping", false);
+            }
+
         }
         else
-        {  
+        {
             jump = false;
             animator.SetBool("IsJumping", false);
         }
     }
 
+    //Spawns a Bullet object if the raycast detects an enemy
     void ShootAtEnemyMethod(RaycastHit2D hit)
     {
         //if Raycast detects enemy, shoot at enemy
@@ -347,6 +363,7 @@ public class PlayerAI_BehaviourTree : MonoBehaviour
         }
     }
 
+    //Main pathfinding method built on from PlayerAI class, could not get implementation working within Tree, runs in FixedUpdate
     void PathfindMethod()
     {
         //if statements returns if no path has been assigned
